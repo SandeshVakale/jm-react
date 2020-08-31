@@ -28,7 +28,7 @@ function SearchList() {
                                        width={100}
                     /> : <PaginationList
                         data={product}
-                        pageSize={8}
+                        pageSize={5}
                         renderItem={(item) => (
                             <div className='list' key={item.id}>
                                 <li className='listItem'>{item.brand}</li> <ul>- {item.name}</ul>

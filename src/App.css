@@ -63,5 +63,5 @@
 
 .pagination {
   align-self: center;
-  width: 50%;
+  width: fit-content;
 }
