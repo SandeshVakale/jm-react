@@ -31,7 +31,7 @@ function SearchList() {
                         pageSize={5}
                         renderItem={(item) => (
                             <div className='list' key={item.id}>
-                                <li className='listItem'>{item.brand}</li> <ul>- {item.name}</ul>
+                                <li ><text className='listItem'>{item.brand}</text> <text>- {item.name}</text></li>
                             </div>
                         )}
                     />}
