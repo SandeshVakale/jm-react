@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import axios from 'axios'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+axios.defaults.withCredentials = false
+axios.defaults.baseURL = "https://cors-anywhere.herokuapp.com/https://skincare-api.herokuapp.com"
 ReactDOM.render(
   <React.StrictMode>
     <App />
