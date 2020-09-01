@@ -9,12 +9,6 @@ function SearchList() {
     const [ query, setQuery ] = useState('')
     const [ error, setError ] = useState(false)
     const [ loading, setLoading ] = useState(false)
-    const [width, setWidth] = React.useState(window.innerWidth);
-    const breakpoint = 620;
-
-    React.useEffect(() => {
-        window.addEventListener("resize", () => setWidth(window.innerWidth));
-    }, [])
     const search = () => {
         setLoading(true)
         Request(query).then((res) => {
@@ -31,8 +25,8 @@ function SearchList() {
     return (
             <div className='SearchBox'>
                 <div className='SearchBar'>
-                    <input className={width > breakpoint ? 'input' : 'input-mobile'} type="text" placeholder="Product Name" onChange={e => setQuery(e.target.value)}/>
-                    <button className={width > breakpoint ? 'button' : 'button-mobile'} onClick={search}>Search</button>
+                    <input className='input' type="text" placeholder="Product Name" onChange={e => setQuery(e.target.value)}/>
+                    <button className='button' onClick={search}>Search</button>
                 </div>
                 <div className={loading ? 'Loader' : 'pagination'}>
                     {loading ? <Loader type="Puff"
