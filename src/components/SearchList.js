@@ -16,11 +16,11 @@ function SearchList() {
                 setProduct(res.data)
                 setError(false)
             } else {
-                setProduct([{id: 1, brand: 'No Product Found', name: 'Search again with different keyword'}])
                 setError(true)
             }
             setLoading(false)
-        })
+        }).catch(() => {
+            setError(true)})
     }
     return (
             <div className='SearchBox'>
