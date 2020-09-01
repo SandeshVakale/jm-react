@@ -75,11 +75,12 @@
 
 .pagination {
   align-self: center;
-  width: fit-content;
+  width: 60%;
 }
 
 .Loader {
   justify-content: center;
   display: flex;
   margin-top: 100px;
+  color: white;
 }

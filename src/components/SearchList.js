@@ -7,11 +7,18 @@ import Loader from 'react-loader-spinner'
 function SearchList() {
     const [ product, setProduct ] = useState([])
     const [ query, setQuery ] = useState('')
+    const [ error, setError ] = useState(false)
     const [ loading, setLoading ] = useState(false)
     const search = () => {
         setLoading(true)
         Request(query).then((res) => {
-            setProduct(res.data)
+            if (res.data.length > 0) {
+                setProduct(res.data)
+                setError(false)
+            } else {
+                setProduct([{id: 1, brand: 'No Product Found', name: 'Search again with different keyword'}])
+                setError(true)
+            }
             setLoading(false)
         })
     }
@@ -26,7 +33,7 @@ function SearchList() {
                                        color="#FFF"
                                        height={100}
                                        width={100}
-                    /> : <PaginationList
+                    /> : error ? <div className='Loader'>Product not found, search with another keyword</div> : <PaginationList
                         data={product}
                         pageSize={5}
                         renderItem={(item) => (
