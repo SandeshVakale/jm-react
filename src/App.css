@@ -10,7 +10,7 @@
   flex-direction: row;
   height: 50%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 }
 
 .Block {
@@ -76,6 +76,7 @@
 .pagination {
   align-self: center;
   width: 60%;
+  min-width: fit-content;
 }
 
 .Loader {
