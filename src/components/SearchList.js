@@ -21,7 +21,7 @@ function SearchList() {
                     <input className='input' type="text" placeholder="Product Name" onChange={e => setQuery(e.target.value)}/>
                     <button className='button' onClick={search}>Search</button>
                 </div>
-                <div className='pagination'>
+                <div className={loading ? 'Loader' : 'pagination'}>
                     {loading ? <Loader type="Puff"
                                        color="#FFF"
                                        height={100}

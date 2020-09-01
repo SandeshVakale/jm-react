@@ -70,3 +70,9 @@
   align-self: center;
   width: fit-content;
 }
+
+.Loader {
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
