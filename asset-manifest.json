@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/jm-react/static/css/main.1f28898b.chunk.css",
+    "main.js": "/jm-react/static/js/main.93c8626d.chunk.js",
+    "main.js.map": "/jm-react/static/js/main.93c8626d.chunk.js.map",
+    "runtime-main.js": "/jm-react/static/js/runtime-main.0222d074.js",
+    "runtime-main.js.map": "/jm-react/static/js/runtime-main.0222d074.js.map",
+    "static/js/2.203dff59.chunk.js": "/jm-react/static/js/2.203dff59.chunk.js",
+    "static/js/2.203dff59.chunk.js.map": "/jm-react/static/js/2.203dff59.chunk.js.map",
+    "index.html": "/jm-react/index.html",
+    "precache-manifest.a6c9fd883ec537c43b385e9106e039d7.js": "/jm-react/precache-manifest.a6c9fd883ec537c43b385e9106e039d7.js",
+    "service-worker.js": "/jm-react/service-worker.js",
+    "static/css/main.1f28898b.chunk.css.map": "/jm-react/static/css/main.1f28898b.chunk.css.map",
+    "static/js/2.203dff59.chunk.js.LICENSE.txt": "/jm-react/static/js/2.203dff59.chunk.js.LICENSE.txt",
+    "static/media/beauty-products.jpg": "/jm-react/static/media/beauty-products.9840c506.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0222d074.js",
+    "static/js/2.203dff59.chunk.js",
+    "static/css/main.1f28898b.chunk.css",
+    "static/js/main.93c8626d.chunk.js"
+  ]
+}
