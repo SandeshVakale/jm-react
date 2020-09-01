@@ -23,6 +23,11 @@
   height: 100%
 }
 
+.text {
+  width: 180px;
+  text-align: center;
+}
+
 .SearchBox {
   background-color: #DB0992;
   width: 100%;
@@ -42,16 +47,18 @@
   width: 50%;
   border-radius: 5px;
   border: 0px;
-  margin-top: 70px;
+  margin-top: 4%;
   padding-left: 10px;
 }
 
 .button {
   background-color: #55D7FF;
-  height: 35px;
+  height: 30px;
   margin-left: 20px;
   width: 100px;
-  margin-top: 68px;
+  margin-top: 4%;
+  border-radius: 5px;
+  border: 0px;
 }
 
 .list {
