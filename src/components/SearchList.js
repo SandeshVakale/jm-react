@@ -19,7 +19,7 @@ function SearchList() {
             <div className='SearchBox'>
                 <div className='SearchBar'>
                     <input className='input' type="text" placeholder="Product Name" onChange={e => setQuery(e.target.value)}/>
-                    <button className='button' onClick={search}>Search</button>
+                    <button id='search-button-id' className='button' onClick={search}>Search</button>
                 </div>
                 <div className={loading ? 'Loader' : 'pagination'}>
                     {loading ? <Loader type="Puff"
