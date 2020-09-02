@@ -28,11 +28,20 @@ function SearchList() {
         }).catch(() => {
             setError(true)})
     }
+
+    const onEnterPress = (e) => {
+        if(e.keyCode === 13 && e.shiftKey === false) {
+            e.preventDefault();
+            search();
+        }
+    }
+
+
     return (
             <div className='SearchBox'>
                 <div className={width > breakpoint ? 'SearchBar': 'SearchBar-Mobile'}>
-                    <input className='input' type="text" placeholder="Product Name" onChange={e => setQuery(e.target.value)}/>
-                    <button className='button' onClick={search}>Search</button>
+                    <input className='input' type="text" placeholder="Product Name" onKeyDown={onEnterPress} onChange={e => setQuery(e.target.value)}/>
+                    <button className='button' type='submit' onClick={search}>Search</button>
                 </div>
                 <div className={loading ? 'Loader' : 'pagination'}>
                     {loading ? <Loader type="Puff"
