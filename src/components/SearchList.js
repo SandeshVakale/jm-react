@@ -50,7 +50,7 @@ function SearchList() {
                                        width={100}
                     /> : error ? <div className='Loader'>Product not found, search with another keyword</div> : <PaginationList
                         data={product}
-                        pageSize={5}
+                        pageSize={width > breakpoint ? 5 : 3}
                         renderItem={(item) => (
                             <div className='list' key={item.id}>
                                 <li ><text className='listItem'>{item.brand}</text> <text>- {item.name}</text></li>
